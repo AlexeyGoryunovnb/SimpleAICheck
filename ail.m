@@ -17,7 +17,3 @@ for seed = 1:4
     plot(k,sqrer);
     grid on; axis([0 100 0 0.4]);
 end
-
-function R = A(Y)
-    R = [Y(9:32), bitxor(Y(1:8), Y(9:16))];
-end
